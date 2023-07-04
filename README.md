@@ -18,7 +18,7 @@ Install the DDEV add-on and restart the server:
 ddev get wp-strap/ddev-vite
 ddev restart
 ```
-Or simply bootstrap a new WP project with these combined commands: (make sure to change title & URL inside `wp core install` command accordingly)
+Or simply bootstrap a new WP project with these combined commands using this add-on: (make sure to change title & URL inside `wp core install` command accordingly)
 
 ```shell
 mkdir wordpress 
