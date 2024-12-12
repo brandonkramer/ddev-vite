@@ -12,18 +12,32 @@ You can read more about ViteJS on [vitejs.dev](https://vitejs.dev)
 
 ## Getting started
 
-Install the DDEV add-on and restart the server:
+Install the DDEV add-on:
+
+For DDEV v1.23.5 or above run
+
+```shell
+ddev add-on get wp-strap/ddev-vite
+```
+
+For earlier versions of DDEV run
 
 ```shell
 ddev get wp-strap/ddev-vite
+```
+
+Then restart your project
+
+```shell
 ddev restart
 ```
+
 Or simply bootstrap a new WP project with these combined commands using this add-on: (make sure to change title & URL inside `wp core install` command accordingly)
 
 ```shell
 mkdir wordpress 
 ddev config --docroot=wordpress --project-type=wordpress
-ddev get wp-strap/ddev-vite
+ddev add-on get wp-strap/ddev-vite
 ddev start
 ddev exec wp core download --path="wordpress"
 ddev exec wp core install --path="wordpress" --title="WPVitePlayground" --admin_name="admin" --admin_password="password" --admin_email="admin@local.ddev" --url="https://wp-vite-playground.ddev.site"
