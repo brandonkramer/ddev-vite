@@ -1,3 +1,5 @@
+** see https://github.com/mrOttoW/ddev-wordpress-vite for updated repository **
+
 <div align="center">
   <a href="https://vitejs.dev/">
     <img width="200" height="200" hspace="10" src="https://vitejs.dev/logo.svg" alt="vite logo" />
